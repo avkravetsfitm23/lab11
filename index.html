@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Смачняхи</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Смачняхи <span>&</span> Смаколики</h1>
+
+  <!-- приховані радіо для фільтрів -->
+  <input type="radio" name="filter" id="all" checked>
+  <input type="radio" name="filter" id="cake">
+  <input type="radio" name="filter" id="donut">
+  <input type="radio" name="filter" id="pie">
+  <input type="radio" name="filter" id="roll">
+  <input type="radio" name="filter" id="cheese">
+
+  <div class="main-section">
+    <div class="gallery-box">
+      <div class="food-card" data-type="Торт">
+        <img src="https://rud.ua/uploads/under_recipe/maxresdefault%20(4).jpg" alt="Шоколадний торт">
+        <p><b>Торт:</b> Шоколадний</p>
+        <p>Калорії: 310 кКал</p>
+      </div>
+      <div class="food-card" data-type="Тістечко">
+        <img src="https://images.prom.ua/4636616737_w1280_h640_4636616737.jpg" alt="Пончик">
+        <p><b>Тістечко:</b> Пончик</p>
+        <p>Калорії: 280 кКал</p>
+      </div>
+      <div class="food-card" data-type="Пиріг">
+        <img src="https://images.unian.net/photos/2020_09/thumb_files/1200_0_1599634704-8456.jpg" alt="Яблучний пиріг">
+        <p><b>Пиріг:</b> Яблучний</p>
+        <p>Калорії: 290 кКал</p>
+      </div>
+      <div class="food-card" data-type="Рулет">
+        <img src="https://greenpost.ua/upload/news/2023/05/24/rulet_965x0.jpg?v=1709762602" alt="Рулет з полуницею">
+        <p><b>Рулет:</b> Полуничний</p>
+        <p>Калорії: 360 кКал</p>
+      </div>
+      <div class="food-card" data-type="Сирники">
+        <img src="https://baluvanagalya.com.ua/wp-content/uploads/2021/01/DSC_0634-1-scaled.jpg" alt="Сирники">
+        <p><b>Сирники:</b> Домашні</p>
+        <p>Калорії: 250 кКал</p>
+      </div>
+    </div>
+
+    <div class="filters-box">
+      <div class = "slider-box">
+      <h3>Калорії</h3>
+      <div class="calorie-slider">
+        <div class="slider-track"></div>
+        <input type="range" min="200" max="500" value="255">
+        <input type="range" min="200" max="500" value="440">
+        <div class="slider-values">
+          <span>230</span> – <span>400</span> кКал
+        </div>
+      </div>
+      </div>
+
+      <div class="filter-buttons">
+        <label for="cake">Торт</label>
+        <label for="donut">Тістечко</label>
+        <label for="pie">Пиріг</label>
+        <label for="roll">Рулет</label>
+        <label for="cheese">Сирники</label>
+        <label for="all">Показати все</label>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-wrap">
+      <div class="contacts">
+        <span class="label">Пиши нам:</span>
+        <a href="mailto:smachnyaki@student.ua">smachnyaki@student.ua</a>
+      </div>
+      <div class="copyright">
+        © 2025 Student Corp 😎
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
